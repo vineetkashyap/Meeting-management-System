@@ -1,0 +1,17 @@
+{% extends 'attendee.html' %}
+
+{% block content %}
+ <div class="container mt-5">
+                 <div class="row">
+                    <div class="col-5 offset-3">
+
+                         <form action="" method="post">
+                         {% csrf_token %}
+                             {{form.as_p}}
+                             <input type="submit" value="Add" class='btn btn-primary btn-lg btn-block mb-5'>
+                         </form>
+                        
+                    </div>
+                 </div>
+                 </div>
+{% endblock content %}
